@@ -27,3 +27,14 @@ Para utilizar este metodo se debe tener en cuenta las siguientes condiciones.
 El sistema debe ser estable en lazo abierto, Tambien debe tener un comportamiento sobre o criticamente amortiguado.
 Este procedimiento consiste en la aplicacion de una señal de tipo escalon y capturar los datos obtenidos.
 ## Metodo de Ziegler y Nichols
+Son metodos muy antiguos utilizados en los tiempos en donde no se tenian ayudas computacionales. Teniendo esto en cuenta este metodo permitia evadir el modelamiento matematico riguroso.
+# Metodos de identificacion de dos puntos
+Este metodo permite una mejor representacion de la respuesta del modelo debido a los dos puntos de referencia.
+## Lazo abierto
+Algunos sistemas inestables se pueden indentificar en lazo abierto. El modelo obenido es aproximado y el error es asumido por el controlador
+## Aproximacion FOPDTI
+El modelo matematico para aproximar segun este metodo es:
+
+$$G=\frac{ke^{-st_{0}}}{(\tau s+1)s}$$
+
+La metodologia de este metodo es la siguiente, se captura la curva de reaccion de lazo abierto, se deriva la curva obtenida por metodo numerico o usando simulacion y el resultado se aproxima a primer orden mas el tiempo muerto

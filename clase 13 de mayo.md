@@ -23,3 +23,7 @@ $$ G(s)=\frac{ke^{-st_{0}}}{\tau s+1}$$
 Donde $\tau$ es contante de tiempo del sistema, k es ganancia estatica del sistema y t_{0} es tiempo muerto.
 
 ## Aplicacion curvas de reaccion en lazo abierto
+Para utilizar este metodo se debe tener en cuenta las siguientes condiciones.
+El sistema debe ser estable en lazo abierto, Tambien debe tener un comportamiento sobre o criticamente amortiguado.
+Este procedimiento consiste en la aplicacion de una señal de tipo escalon y capturar los datos obtenidos.
+## Metodo de Ziegler y Nichols

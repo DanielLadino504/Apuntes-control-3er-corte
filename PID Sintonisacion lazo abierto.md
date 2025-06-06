@@ -37,7 +37,7 @@ Se refiere a las diferentes formas de convinar estas tres acciones. Aqui se pres
 
 * Arquitectura Paralela:
 
-
+![](100.jpeg)
 
 Esta estructura se realizan los siguientes calculos::
 
@@ -47,7 +47,7 @@ $$U(s)=k_{p}\cdot E(s)+k_{i}\cdot \frac{E(s)}{s}+k_{d}\cdot sE(s)$$
 
 * Arquitectura ideal:
 
-
+![](101.jpeg)
 
 Esta arquitectura se calcula de la siguiente manera:
 
@@ -57,7 +57,7 @@ $$U(s)=k_{p}(E(s)+\frac{1}{t_{i}}\cdot \frac{E(s)}{s}+T_{d}\cdot sE(s))$$
 
 * Arquitectura Serie:
 
-
+![](102.jpeg)
 
 Para esta estructura se realizan los siguientes calculos:
 

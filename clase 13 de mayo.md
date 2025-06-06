@@ -27,11 +27,67 @@ Para utilizar este metodo se debe tener en cuenta las siguientes condiciones.
 El sistema debe ser estable en lazo abierto, Tambien debe tener un comportamiento sobre o criticamente amortiguado.
 Este procedimiento consiste en la aplicacion de una señal de tipo escalon y capturar los datos obtenidos.
 ## Metodo de Ziegler y Nichols
+![](104.jpeg)
+
 Son metodos muy antiguos utilizados en los tiempos en donde no se tenian ayudas computacionales. Teniendo esto en cuenta este metodo permitia evadir el modelamiento matematico riguroso.
+La recta tangente se traza al punto de inflexion de la curva y sus ecuaciones son:
+
+$t_{m}$=cruce de la recta tangente con el eje del tiempo
+
+$$K=\frac{\Delta y}{\Delta u}$$
+## Metodo modificado de miller
+![](105.jpeg)
+
+El proposito de miller con este metodo es hacer el proceso mas repetible
+La recta tangente se traza de la misma manera y con esto se hayara el tiempo muerto. Ademas, la constante de tiempo se identificara a partir de un valor fijo de la grafica.
+Sus ecuaciones son:
+
+$t_{m}$=cruce de la recta tangente con el eje del tiempo
+
+$$\tau =\tau '-t_{m}$$
+
+$$K=\frac{\Delta y}{\Delta u}$$
+
+Como se puede observan son las mismas que en el anterior metodo con la diferencia que se agrega la ecuacion de $\tau$
 # Metodos de identificacion de dos puntos
+![](106.jpeg)
+
 Este metodo permite una mejor representacion de la respuesta del modelo debido a los dos puntos de referencia.
 ## Lazo abierto
 Algunos sistemas inestables se pueden indentificar en lazo abierto. El modelo obenido es aproximado y el error es asumido por el controlador
+Sus ecauciones son:
+
+$$\tau =At_{1}+Bt_{2}$$
+
+$$t_{o}=Ct_{1}+Dt_{2}$$
+
+$$K=\frac{\Delta y}{\Delta u}$$
+
+## Ejemplo en clase
+Se tiene la siguiente señal:
+
+El valor final es 2 por lo que:
+
+$$P_{2}=2(0.632)=1.2604$$
+
+$$P_{1}=2(0.283)=0.566$$
+
+Teniendo esto en cuenta se llega a los siguientes resultados:
+
+En la grafica se ubican los dos puntos:
+
+Se obtienen los parametros:
+
+$$\tau =(-1.5)(1.67)+(1.5)(2.89)=1.83 seg$$
+
+$$t_{0} =(1.5)(1.67)+(-0.5)(2.89)=1.06 seg$$
+
+$$K=\frac{2-0}{1-0}=2$$
+
+$$G(s)=2\cdot \frac{e^{-1.06s}}{1.83s+1}$$
+
+finalmente obtenemos la grafica resultante:
+
 ## Aproximacion FOPDTI
 El modelo matematico para aproximar segun este metodo es:
 

@@ -38,3 +38,13 @@ El modelo matematico para aproximar segun este metodo es:
 $$G=\frac{ke^{-st_{0}}}{(\tau s+1)s}$$
 
 La metodologia de este metodo es la siguiente, se captura la curva de reaccion de lazo abierto, se deriva la curva obtenida por metodo numerico o usando simulacion y el resultado se aproxima a primer orden mas el tiempo muerto
+
+## Aproximacion IPDT
+El modelo que se utiliza para para aproximar es:
+
+$$G=\frac{Ke^{-st_{o}}}{s}$$
+
+Para este metodo la metodologia se basa en:
+1. se captura la curva de reaccion en lazo abierto
+2. Se ubican los puntos caracteristicos de la curva obtenida
+3. Se calculan los parametros K t $T_{o}$

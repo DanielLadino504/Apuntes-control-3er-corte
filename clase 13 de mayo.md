@@ -62,9 +62,31 @@ $$\tau =At_{1}+Bt_{2}$$
 $$t_{o}=Ct_{1}+Dt_{2}$$
 
 $$K=\frac{\Delta y}{\Delta u}$$
+## Constantes
+Las constantes que se utilizaran seran las siguientes:
+
+| Método         | %P₁ (t₁) | %P₂ (t₂) | A      | b      | c      | d      |
+|----------------|-----------|-----------|--------|--------|--------|--------|
+| Alfaro         | 250       | 75.0      | -0.910 | 0.910  | 1.262  | -0.262 |
+| Bröida         | 28.0      | 40.0      | -5.500 | 5.500  | 2.800  | -1.800 |
+| Chen y Yang    | 33.0      | 67.0      | -1.400 | 1.400  | 1.540  | -0.540 |
+| Ho *et al.*    | 35.0      | 85.0      | -0.670 | 0.670  | 1.300  | -0.290 |
+| Smith          | 28.3      | 63.2      | -1.500 | 1.500  | 1.500  | -0.500 |
+
 
 ## Ejemplo en clase
 Se tiene la siguiente señal:
+
+![](108.jpeg)
+
+
+Teniendo esto en cuenta se llega a los siguientes resultados:
+
+| Método Smith | A    | B    | C    | D    |
+|--------------|------|------|------|------|
+| P2 = 63.2 %  | -1.5 | 1.5  | 1.5  | -0.5 |
+| P1 = 28.3 %  | -1.5 | 1.5  | 1.5  | -0.5 |
+
 
 El valor final es 2 por lo que:
 
@@ -72,9 +94,9 @@ $$P_{2}=2(0.632)=1.2604$$
 
 $$P_{1}=2(0.283)=0.566$$
 
-Teniendo esto en cuenta se llega a los siguientes resultados:
-
 En la grafica se ubican los dos puntos:
+
+![](109.jpeg)
 
 Se obtienen los parametros:
 
@@ -87,6 +109,26 @@ $$K=\frac{2-0}{1-0}=2$$
 $$G(s)=2\cdot \frac{e^{-1.06s}}{1.83s+1}$$
 
 finalmente obtenemos la grafica resultante:
+
+![](110.jpeg)
+## Metodo de 2 puntos en segundo orden
+Este metodo tambien es efectivo con los sistemas de segundo orden. Su aplicacion es igual pero se cambian las constantes.
+
+| Método                       | A      | B      | C      | D      |
+|-----------------------------|--------|--------|--------|--------|
+| Ho <br> P2 = 85% <br> P1 = 35%      | -0.463 | 0.463  | 1.574  | -0.574 |
+| Viteckova <br> P2 = 70% <br> P1 = 33% | -0.749 | 0.749  | 1.937  | -0.937 |
+
+
+Ademas se tienen las siguientes formulas:
+
+$$\tau =At_{1}+Bt_{2}$$
+
+$$t_{o}=Ct_{1}+Dt_{2}$$
+
+$$K=\frac{\Delta y}{\Delta u}$$
+
+$$G(s)=\frac{ke^{-t_{o}s}}{(\tau s+1)(\tau s+1)}$$
 
 ## Aproximacion FOPDTI
 El modelo matematico para aproximar segun este metodo es:

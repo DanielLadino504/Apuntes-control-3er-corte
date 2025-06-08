@@ -102,6 +102,8 @@ Otro de los metodos que existen es el metodo cohen-coon el cual contiene las sig
 | P                   | \( $\frac{1}{K} \cdot \frac{\tau}{t_{o}} \cdot \left( \frac{3\tau + t_{o}}{3\tau} \right)$ \) | ———————————————————                                                        | ———————————————————  |
 | PI                  | \( $\frac{1}{K} \cdot \frac{\tau}{t_{o}} \cdot \left( \frac{10.8\tau + t_{o}}{12\tau} \right) $\) | \( $\frac{30 + 3\left(\frac{t_{o}}{\tau}\right)}{9 + 20\left(\frac{t_{o}}{\tau}\right)} \cdot t_{o} $\) | ———————————————————  |
 | PID                 | \( $\frac{1}{K} \cdot \frac{\tau}{t_{o}} \cdot \left( \frac{16\tau + 3t_{o}}{12\tau} \right)$ \) | \( $2t_{o}$ \)                                                              | \( $0.5t_{o}$ \)  |
+
+
 Para este metodo sew tienen los siguientes criterios de desempeño:
 1. Decaimiento de 1/4
 2. Minimo sobre impulso posible
@@ -115,6 +117,38 @@ Este metodo tiene las siguientes formulas para hayar sus parametros:
 | 0.1 a 0.2           | \( $\frac{0.5}{K \gamma}$ \)                             | \( $\tau$ \)           | ———————————————————                                 |
 | 0.2 a 0.5           | \( $\frac{0.5(1 + 0.5 \gamma)}{K \gamma}$ \)             | \( $\tau(1 + 0.5 \gamma)$ \) | \($\tau \cdot \frac{0.5 \gamma}{0.5 \gamma + 1}$ \) |
 
+
 Para este metodo hay los siguientes criterios de desempeño:
 1. minimo ITAE
 2. Minimo error con respecto aal factor de amortiguamiento.
+# Ejercicios
+1. Tenemos la siguiente señal:
+
+![](12.jpeg)
+
+Teniendo en cuenta lo que se puede obseervar de la figura es:
+
+$$t_{0}=2$$
+
+$$\tau=9$$
+
+$$K=\frac{\Delta Salida}{\Delta Entrada}=\frac{2}{1}=2$$
+
+Teniendo estos datos realizamos los calculos:
+P:
+
+$$K_{p}=\frac{\tau }{t_{0}K}=\frac{9 }{2(2)}=\frac{9}{4}=2.25$$
+
+PI:
+
+$$K_{p}=\frac{0.9\tau }{t_{0}K}=\frac{0.9(9)}{2(2)}=\frac{8.1}{4}=2.025$$
+
+$$T_{i}=3.3t_{0}=3.3(2)=6.6 seg$$
+
+PID:
+
+$$K_{p}=\frac{1.2\tau }{t_{0}K}=\frac{1.2(9)}{2(2)}=\frac{10.8}{4}=2.7$$
+
+$$T_{i}=2t_{0}=4 seg$$
+
+$$T_{d}=0.5t_{0}=1 seg$$

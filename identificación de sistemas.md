@@ -146,3 +146,23 @@ Para este metodo la metodologia se basa en:
 1. se captura la curva de reaccion en lazo abierto
 2. Se ubican los puntos caracteristicos de la curva obtenida
 3. Se calculan los parametros K t $T_{o}$
+
+# Ejercicios
+1. Se tiene la siguiente señal
+
+![](10.png)
+
+Podemos ver una respuesta al escalon de un sistema de primer orden.
+De la grafica podemos sacar los siguientes datos:
+
+1. $A=2$
+2. el sistema se eleva alrededor de los $t_{i}=5 seg$, entonces $L=5s$
+3. t=33 seg
+4. T=33-5=28 seg
+Con estos datos nos disponemos a realizar los siguientes calculos:
+
+$$K_{p}=1.2\frac{T}{L}=1.2\frac{28}{5}=6.72$$
+
+$$ T_{i}=2L=2(5)=10 seg$$
+
+$$T_{d}=0.5L=0.5(5)=2.5 seg$$

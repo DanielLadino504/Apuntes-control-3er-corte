@@ -152,3 +152,34 @@ $$K_{p}=\frac{1.2\tau }{t_{0}K}=\frac{1.2(9)}{2(2)}=\frac{10.8}{4}=2.7$$
 $$T_{i}=2t_{0}=4 seg$$
 
 $$T_{d}=0.5t_{0}=1 seg$$
+
+2. Tenemos la siguiente señal:
+
+![](13.jpeg)
+
+Tomando los datos otorgados por la grafica obtenemos:
+
+$$t_{0}=2 seg$$
+
+$$\tau=8 seg$$
+
+$$K=\frac{\Delta Salida}{\Delta Entrada}=\frac{0.4}{1}=0.4$$
+
+Se procede a realizar los siguientes calculos:
+P:
+
+$$K_{p}=\frac{\tau }{t_{0}K}=\frac{8}{2(0.4)}=\frac{8}{0.8}=10$$
+
+PI:
+
+$$K_{p}=\frac{0.9\tau }{t_{0}K}=\frac{0.9(8)}{2(0.4)}=\frac{7.2}{0.8}=9$$
+
+$$T_{i}=3.3t_{0}=3.3(2)=6.6 seg$$
+
+PID:
+
+$$K_{p}=\frac{1.2\tau }{t_{0}K}=\frac{1.2(8)}{2(0.4)}=\frac{9.6}{0.8}=12$$
+
+$$T_{i}=2t_{0}=4 seg$$
+
+$$T_{d}=0.5t_{0}=1 seg$$

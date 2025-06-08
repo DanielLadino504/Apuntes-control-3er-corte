@@ -166,3 +166,22 @@ $$K_{p}=1.2\frac{T}{L}=1.2\frac{28}{5}=6.72$$
 $$ T_{i}=2L=2(5)=10 seg$$
 
 $$T_{d}=0.5L=0.5(5)=2.5 seg$$
+
+2. Tenemos la siguiente señal. Tenga en cuenta que el sistema tiene una ganancia de oscilacion sostenida de $k_{u}=4.5$ y una oscilacion sostenida de $T_{u}=2 seg$ 
+
+![](11.png)
+
+Como se puede ver tenemos una señal que representa una respuesta al escalon de un sistema de segundo orden submamortiguado.
+Viendo el diagrama podemos sacar los siguientes datos:
+
+1. tiempo de estabilizacion: $t_{s}=3.3 seg$
+2. tiempo pico: $t_{p}:1.1 seg$
+3. la señal se estabiliza en 2
+
+Teniendo estos datos en cuenta nos disponemos a realizar los calculos:
+
+$$K_{p}=0.6K_{u}=0.6(4.5)=2.7$$
+
+$$T_{i}=\frac{T_{u}}{2}=\frac{2}{2}=1 seg$$
+
+$$T_{i}=\frac{T_{u}}{8}=\frac{2}{8}=0.25 seg$$

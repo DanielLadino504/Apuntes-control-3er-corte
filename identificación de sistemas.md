@@ -59,6 +59,8 @@ Como se puede observan son las mismas que en el anterior metodo con la diferenci
 ![](106.jpeg)
 
 Este metodo permite una mejor representacion de la respuesta del modelo debido a los dos puntos de referencia.
+Se trata de una tecnica sensilla para estimar parametros clave de un sistema dinamico a partir de su respuesta ante un escalon.
+Es util cuando se requiere un modelo rapido y aproximado para sintonizar controladores PID en entornos industriales.
 ## Lazo abierto
 Algunos sistemas inestables se pueden indentificar en lazo abierto. El modelo obenido es aproximado y el error es asumido por el controlador
 Sus ecauciones son:

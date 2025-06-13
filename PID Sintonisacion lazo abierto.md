@@ -229,3 +229,6 @@ Una de las principales ventajas de este método es su seguridad operativa evitan
 
 
 # Referencias
+* [1] Ríos Ardila, C. A. (2013). Sintonización del lazo de control de un modelo de simulación de un horno empleando el método Lambda. Universidad Pontificia Bolivariana, Seccional Bucaramanga. Escuela de Ingenierías, Facultad de Ingeniería Electrónica. Monografía dirigida por L. A. Silva.
+* [2] Ogata, K. (2010). *Ingeniería de control moderna* (3ra ed.). Pearson Education. (Capítulo 10-2: Reglas de sintonización para controladores PID).
+* [3] S. a. C. Giraldo, “Lazo Abierto y Lazo Cerrado,” Control Automático Educación, Aug. 14, 2024. https://controlautomaticoeducacion.com/control-realimentado/lazo-abierto-y-lazo-cerrado/

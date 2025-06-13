@@ -15,7 +15,10 @@ Algunos de los métodos de identificación más usados son los siguientes:
 -Tecnicas de inteligencia computacional
 
 ## Procedimiento de sintonizacion 
-Para diseñar cualquier controlador se requiere conocer el comportamiento de la planta, esto para escoger los parametros del sistema y para esto hay metodologias que permiten obtener un modelo aproximado.
+Para diseñar cualquier controlador se requiere conocer el comportamiento de la planta, esto para escoger los parámetros del sistema y para esto hay metodologías que permiten obtener un modelo aproximado.
+
+La sintonización es un proceso critico de control automático para garantizar que un sistema responda de manera óptima a cambios en la referencia o perturbaciones.
+
 ## Metodologias de tipo empirico
 Estas metodologias permiten obtener modelos de comportamiento a partir de pruebas realizadas sobre la planta involucrando manejo de datos, estadistica y señales.
 ## Metodologias de identificacion de lazo abierto

@@ -221,10 +221,11 @@ $$T_{i}=2t_{0}=4 seg$$
 $$T_{d}=0.5t_{0}=1 seg$$
 
 # Conclusion
-La sintonizacion PID en lazo abierto es una estrategia practica y efectiva para ajustar los parametros de un controlador proporcional, integral y derivativo sin necesidad de mantener activo el sistema de retroalimentacion durante el proceso. Esta prueba se basa en analizar el comportamiento del sistema ante una señal controlada permitiendo caracterizar su comportamiento mediante parametros como la ganancia, el tiempo muerto y la cosntante de tiempo.
+La sintonización PID en lazo abierto es una estrategia practica y efectiva para ajustar los parámetros de un controlador proporcional, integral y derivativo sin necesidad de mantener activo el sistema de retroalimentación durante el proceso. Esta prueba se basa en analizar el comportamiento del sistema ante una señal controlada permitiendo caracterizar su comportamiento mediante parámetros como la ganancia, el tiempo muerto y la constante de tiempo.
 
-A partir de la caracterizacion se pueden aplicar regals empiricas de sintinizacion como Ziegler-Nichols o Cohen-Coon que proporcionan valores iniciales adecuados para las constantes del controlador PID permitiendo que el sistema tenga una buena velocidad de respuesta, buena presicion y estabilidad del sistema.
+A partir de la caracterización se pueden aplicar reglas empíricas de sintonización como Ziegler-Nichols o Cohen-Coon que proporcionan valores iniciales adecuados para las constantes del controlador PID permitiendo que el sistema tenga una buena velocidad de respuesta, buena precisión y estabilidad del sistema.
 
-Una de las principales ventajas de este metodo es su seguridad operativa evitando riesgos de inestabilidad que pueden llegar a presentarse en los metodos en lazo cerrado. Cabe mencionar que una de suslimitantes es la dependencia de la calidad en la medicion y la dificultad que presenta ante sistemas no lineales.
+Una de las principales ventajas de este método es su seguridad operativa evitando riesgos de inestabilidad que pueden llegar a presentarse en los métodos en lazo cerrado. Cabe mencionar que una de sus limitantes es la dependencia de la calidad en la medición y la dificultad que presenta ante sistemas no lineales.
+
 
 # Referencias

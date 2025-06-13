@@ -1,7 +1,18 @@
-# Sintonizacion lazo abierto
+# Sintonizacion PID en lazo abierto
+La sintonización de controladores PID es un proceso fundamental en el área de control. Esto se usa para asegurar que un sistema responda de forma estable y eficiente ante perturbaciones o cabios en las condiciones de operación.
+
+El método de sintonización en lazo abierto se basa en desconectar temporalmente el lazo de control y aplicar una señal (usualmente de tipo escalón) de entrada al sistema para observar su respuesta y a partir de esta se obtienen características del circuito que serán claves como el tiempo de retardo, la ganancia estática y las constantes del tiempo. 
+Estos parámetros servirán para construir un modelo aproximado del sistema, y basándose en el modelo se utilizan metodologías empíricas de sintonización como el método Ziegler-Nichols o Choen-Coon que proporcionan formulas específicas para calcular los valores óptimos de las constantes para el controlador PID.
+
+Este tipo de sintonización ofrece simplicidad, bajo riesgo de inestabilidad durante el proceso de ajuste y tiene la posibilidad de aplicarse a sistemas que operan de manera continua.
+
 ## controladores PID
-Sus origenes datan desde 1922 donde Nicolas Minorski realizo el analisis de este tipo de controladores y describe el funcionamiento de estos
-Tambien en 1936 la idea de un controlador de tres terminos de proposito general con una accion de control  variable no fue introducido hasta finales de la decada de 1930.
+Sus orígenes datan desde 1922 donde Nicolas Minorski realizo el análisis de este tipo de controladores. Su trabajo surgió a partir de la necesidad de automatizar el sistema de dirección de barcos de guerra. En medio de esto formulo por primera vez un modelo matemático que incorporaba tres acciones fundamentales: proporcional, integral y derivativa.
+
+Posteriormente en 1936 la idea de un controlador de tres términos de propósito general con una acción de control variable. es decir, capaz de ser ajustado y aplicado a distintos tipos de sistemas comenzó a tomar forma. sin embargo, no fue introducido en su totalidad hasta finales de la década de 1930 donde se integró en aplicaciones prácticas.
+Este avance represento un hito importante en el campo del control automático permitiendo el diseño de sistemas más versátiles, robustos y adaptables a diferentes condiciones.
+
+
 ## Acciones de control
 Para poder entender estos controladores debemos tener en cuenta las siguientes caracteristicas:
 -La accion proporcioanl es util en los problemas en las que unicamnete se quiere modificar uno de los parametros del sistema.

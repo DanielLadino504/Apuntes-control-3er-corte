@@ -203,3 +203,6 @@ Por medio de esta curva se pueden extraer parámetros como el tiempo muerto, la 
 La principal ventaja de esta técnica es su simplicidad y su bajo requerimiento computacional. sin embargo, tiene limitaciones cosas como la sensibilidad al ruido, la precisión limitada en sistemas no lineales además de tener que interrumpir temporalmente el lazo de control.
 En resumen, esta herramienta sigue siendo una opción a tener en cuenta para obtener modelos aproximados de sistemas desconocidos.
 # Referencias
+* [1] Instituto Tecnológico Metropolitano. (s. f.). Identificación de procesos y curva de reacción [PDF]. Recuperado de tableroalparque.weebly.com.
+* [2] Flórez Martínez, A., Vargas Flórez, J. O., Contreras Higuera, M. F., & Sneider Pérez, H. (2016). Identificación de la curva de reacción para el proceso térmico en lazo abierto del M2CI de la UNAD. VISIÓN – Revista de Investigaciones UNICIENCIA, 2(1), enero–junio.
+* [3] Cárdenas, R. D. (2014). Identificación de sistemas de primer orden con multímetro digital. Revista de Investigación IngEAM, Facultad de Ingeniería EAM.

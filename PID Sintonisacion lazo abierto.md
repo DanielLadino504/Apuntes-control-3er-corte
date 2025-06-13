@@ -1,4 +1,6 @@
 # Sintonizacion PID en lazo abierto
+Angel David Melo, Daniel Felipe Ladino 
+
 La sintonización de controladores PID es un proceso fundamental en el área de control. Esto se usa para asegurar que un sistema responda de forma estable y eficiente ante perturbaciones o cabios en las condiciones de operación.
 
 El método de sintonización en lazo abierto se basa en desconectar temporalmente el lazo de control y aplicar una señal (usualmente de tipo escalón) de entrada al sistema para observar su respuesta y a partir de esta se obtienen características del circuito que serán claves como el tiempo de retardo, la ganancia estática y las constantes del tiempo. 
@@ -46,16 +48,22 @@ $$u(t)=k_{i}\int e(t)dt$$
 
 $$U(s)=k_{i}\cdot \frac{E(s)}{s}$$
 
-## Derivativa
-Esta seccion se opone a las variaciones que pueda llegar a presentar el error.
-Su formula es:
+## Accion Derivativa
+La acción derivativa se encarga de anticipar el comportamiento futuro del error lo hace midiendo la velocidad de cambio en el error para ser más claros en otras palabras, su derivada.
+
+La función de esta acción es el prevenir que el sistema reaccione de forma exagerada ante cambios rápidos del error oponiéndose al crecimiento de este ayudando a suavizar la respuesta del sistema reduciendo el sobre impulso mejorando la estabilidad del sistema en el proceso.
+
+La acción derivativa si bien es bastante útil tiene sus limitaciones, siendo bastante sensible al ruido de alta frecuencia del error pudiendo provocar cambios rápidos en sus valores generando oscilaciones o respuestas inestables.
+Su fórmula representativa es:
+
 
 $$u(t)=k_{d}\cdot \frac{de(t)}{dt}$$
 
 $$u(t)=k_{d}\cdot sE(s)$$
 
 ## Arquitecturas PID
-Se refiere a las diferentes formas de convinar estas tres acciones. Aqui se presentaran las tres mas usadas:
+Este concepto trata de las diferentes formas en las que pueden combinarse las acciones proporcional, integral y derivativa dentro de un controlador. 
+Cada arquitectura busca equilibrar factores como la rapidez de respuesta, la estabilidad, la eliminación del error en estado estacionario y la reducción de oscilaciones. Dependiendo de cómo se conecten o se sumen estas acciones puede variar tanto la eficacia del controlador como la sensibilidad a perturbaciones.
 
 * Arquitectura Paralela:
 
@@ -67,6 +75,8 @@ $$u(t)=k_{p}\cdot e(t)+k_{i}\int e(t)dt+k_{d}\cdot \frac{de(t)}{dt}$$
 
 $$U(s)=k_{p}\cdot E(s)+k_{i}\cdot \frac{E(s)}{s}+k_{d}\cdot sE(s)$$
 
+Esta es la forma más común. En esta estructura las tres acciones se calculan de forma independiente para luego ser sumadas formando una señal total.
+
 * Arquitectura ideal:
 
 ![](101.jpeg)
@@ -77,6 +87,8 @@ $$u(t)=k_{p}(e(t)+\frac{1}{t_{i}}\int e(t)dt+T_{d}\cdot \frac{de(t)}{dt})$$
 
 $$U(s)=k_{p}(E(s)+\frac{1}{t_{i}}\cdot \frac{E(s)}{s}+T_{d}\cdot sE(s))$$
 
+En esta variante se combina la acción proporcional e integral aplicada sobre el error, pero la señal derivativa se aplica sobre la señal de salida. útil para reducir la sensibilidad al ruido además de evitar una amplificación excesiva de los cambios bruscos en la referencia.
+
 * Arquitectura Serie:
 
 ![](102.jpeg)
@@ -86,6 +98,8 @@ Para esta estructura se realizan los siguientes calculos:
 $$u(t)=\frac{1}{T_{i}}\int ((e(t)+T_{d}\frac{\mathrm{d} e(t)}{\mathrm{d} t})k_{p})dt$$
 
 $$U(s)=((E(s)(1+T_{d}s))k_{p})(1+\frac{1}{T_{i}s})$$
+
+En esta arquitectura las acciones no se suman directamente sino que se conectan en serie de modo que el resultado de una acción influye sobre la siguiente.
 
 ## Sintonizacion por prueba y error
 Esta metodologia es de las mas usadas y se basa en seguir los siguientes pasos:

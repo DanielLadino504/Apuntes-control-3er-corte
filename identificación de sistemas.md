@@ -196,3 +196,10 @@ $$K_{p}=0.6K_{u}=0.6(4.5)=2.7$$
 $$T_{i}=\frac{T_{u}}{2}=\frac{2}{2}=1 seg$$
 
 $$T_{i}=\frac{T_{u}}{8}=\frac{2}{8}=0.25 seg$$
+
+# Conclusion
+La identificación de sistemas es una técnica fundamental y ampliamente utilizada en el análisis y diseño de sistemas de control en especial en contextos en donde no se dispone de un modelo matemático exacto de la planta. Este método se basa en aplicar una señal de entrada tipo escalón al sistema en lazo abierto y observar su respuesta temporal.
+Por medio de esta curva se pueden extraer parámetros como el tiempo muerto, la constante de tiempo y la ganancia estática Permitiendo construir un modelo aproximado.
+La principal ventaja de esta técnica es su simplicidad y su bajo requerimiento computacional. sin embargo, tiene limitaciones cosas como la sensibilidad al ruido, la precisión limitada en sistemas no lineales además de tener que interrumpir temporalmente el lazo de control.
+En resumen, esta herramienta sigue siendo una opción a tener en cuenta para obtener modelos aproximados de sistemas desconocidos.
+# Referencias

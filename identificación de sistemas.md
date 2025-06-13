@@ -1,5 +1,8 @@
 # Identificacion de sistemas por curva de reaccion
-Para poder sintonizar cualquier controlador se debe tener en cuenta los siguientes metodos:
+Angel David Melo, Daniel Felipe Ladino
+
+La identificación de sistemas es un proceso fundamental en el control automático, consiste en determinar un modelo matemático que describa el comportamiento dinámico de un sistema físico a partir de datos experimentales.
+Algunos de los métodos de identificación más usados son los siguientes:
 
 -Modelo matematico
 

@@ -15,12 +15,18 @@ Este avance represento un hito importante en el campo del control automático pe
 
 ## Acciones de control
 Para poder entender estos controladores debemos tener en cuenta las siguientes caracteristicas:
+
 -La accion proporcioanl es util en los problemas en las que unicamnete se quiere modificar uno de los parametros del sistema.
+
 -Si se requiere manejar mas de un objetivo es adecuado utilizar varias acciones de control.
+
 -Un control normalmente no tiene accion proporcional, en vez de esto tiene una funcion de transferencia que contiene las acciones de control.
 Las acciones de control que existen son:
-## Proporcional
-Esta seccion multiplica el error por una constante proporcional. Esto para que el sistema tenga una tasa de crecimiento alta.
+
+## Accion proporcional
+La acción proporcional es la parte más directa y fundamental del controlador PID. Esta sección toma el valor del error t lo multiplica por una constante proporcional.
+El trabajo de esta sección es hacer que el controlador reaccione de manera inmediatamente ante la presencia de un error. mientras más grande la ganancia el sistema va a reaccionar más rápido. sin embargo, si es demasiado grande puede provocar una respuesta oscilatoria o hacer que el sistema sea inestable, por otra parte si es demasiado bajo el sistema reaccionara de manera tardía e imprecisa.
+
 La formula de esta accion es:
 
 $$u(t)=k_{p}\cdot e(t)$$
@@ -28,8 +34,13 @@ $$u(t)=k_{p}\cdot e(t)$$
 $$U(s)=k_{p}\cdot E(s)$$
 
 ## Integral
-Esta seccion se encarga de calcular el error acumulado. Esto para que cuando el error tienda a cero el incremento en la accion de control se vaya haciendo mas pequeña hasta acercarse a cero.
-Su formula es:
+Esta sección se encarga de acumular error a lo largo del tiempo, sumando de manera continua todas las desviaciones pasadas entre la salida real del sistema y el valor que se desea. Su función principal es eliminar el error en estado estacionario.
+
+El principio de esta acción es simple, si hay un error que persiste su acumulación a lo largo del tiempo hará que la señal de control vaya incrementando hasta que el error desaparezca. Una vez el error va reduciendo la señal de control también lo hará y cuando el error tienda a cero la acción integral se estabiliza.
+
+Si esta acción no se ajusta correctamente puede provocar fenómenos como el sobresaturamiento.
+La fórmula que lo representa es:
+
 
 $$u(t)=k_{i}\int e(t)dt$$
 

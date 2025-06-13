@@ -73,9 +73,9 @@ A continuación, se presenta una tabla con las ecuaciones de diseño para difere
 
 Tabla 1. Ecuaciones de diseño de Ziegler & Nichols para controladores P, PI y PID.
 
-**Nota sobre Figuras:** La siguiente figura representaría la respuesta marginalmente estable obtenida con el método de Ziegler & Nichols. Se recomienda generar esta figura (ej. a partir de una simulación en MATLAB/Simulink o Python/SciPy) y guardarla en la carpeta `images/` de su repositorio.
 
-![Respuesta marginalmente estable con Ziegler & Nichols](images/respuesta_zn_ciclo_ultimo.png)
+
+![](20.jpeg)
 
 Figura 1. Respuesta marginalmente estable de un sistema en lazo cerrado utilizando el método de Ziegler & Nichols. Esta figura ilustra la oscilación sostenida que permite determinar $P_u$ y $K_u$.
 
@@ -107,9 +107,7 @@ La sintonización PI utilizando el método del Relé a menudo emplea ecuaciones 
 
 Tabla 2. Sintonización PI con el método del Relé (reglas de Åström y Hägglund).
 
-**Nota sobre Figuras:** La siguiente figura representaría la respuesta del sistema al aplicar el método del Relé. Se recomienda generar esta figura y guardarla en la carpeta `images/` de su repositorio.
-
-![Respuesta del sistema con el método del Relé](images/respuesta_metodo_rele.png)
+![](21.jpeg)
 
 Figura 2. Oscilación sostenida obtenida en lazo cerrado con el controlador tipo relé para la determinación de $P_u$ y $A_u$.
 
@@ -137,13 +135,11 @@ En esta estrategia, la integración de la acción integral se suspende (o se "co
 
 Esta es una de las estrategias más avanzadas y efectivas. Consiste en realimentar la diferencia entre la salida saturada y la salida no saturada del controlador al integrador, a través de una ganancia de seguimiento ($K_t$ o $1/T_t$). Cuando la señal de control calculada por el PID excede los límites del actuador, el término integral se ajusta de tal manera que la salida del controlador "siga" la salida real del actuador. Esto permite que el integrador se "desenrolle" de forma más suave y predictiva cuando el actuador está saturado. La ganancia $T_t$ (o $1/K_t$) definirá la velocidad de respuesta del "anti wind-up", donde típicamente $T_t = T_i$ o $T_t = \sqrt{T_i T_d}$ para un comportamiento óptimo [9, 10]. Esta estrategia proporciona una transición más suave y un mejor rendimiento general del sistema.
 
-**Nota sobre Figuras:** Las siguientes figuras ilustrarían el efecto del "wind-up" y la mejora con estrategias "anti-wind-up". Se recomienda generar estas figuras (ej. a partir de simulaciones en Simulink, LabVIEW o un script Python) y guardarlas en la carpeta `images/` de su repositorio.
-
-![Efecto del Wind-up en la salida del sistema](images/wind_up_efecto.png)
+![](22.jpeg)
 
 Figura 3. Comparación de la respuesta del sistema con un controlador PID sin estrategia anti-wind-up frente a la respuesta con "wind-up" activo, mostrando el sobreimpulso excesivo.
 
-![Comparación de estrategias Anti Wind-up](images/anti_wind_up_estrategias.png)
+![](23.jpeg)
 
 Figura 4. Comparación de la efectividad de diferentes estrategias "anti-wind-up" (saturación, integración condicional, y seguimiento) en la respuesta de un sistema PID saturado.
 

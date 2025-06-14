@@ -158,7 +158,7 @@ Para este metodo hay los siguientes criterios de desempeño:
 1. minimo ITAE
 2. Minimo error con respecto aal factor de amortiguamiento.
 # Ejercicios
-1. Tenemos la siguiente señal:
+📚 1. Tenemos la siguiente señal:
 
 ![](12.jpeg)
 
@@ -189,7 +189,7 @@ $$T_{i}=2t_{0}=4 seg$$
 
 $$T_{d}=0.5t_{0}=1 seg$$
 
-2. Tenemos la siguiente señal:
+📚 2. Tenemos la siguiente señal:
 
 ![](13.jpeg)
 

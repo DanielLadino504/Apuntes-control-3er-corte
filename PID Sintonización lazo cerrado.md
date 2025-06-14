@@ -1,4 +1,5 @@
 # Controladores PID Lazo Cerrado
+Angel David Melo, Daniel Felipe Ladino 
 
 Este informe se centra en el diseño de controladores Proporcional-Integral-Derivativo (PID) en lazo cerrado, una técnica fundamental en sistemas de control. Se abordarán los métodos de sintonización, prestando especial atención al método de Ziegler-Nichols y su mejora, el método del Relé. Además, se explorará el fenómeno del "wind-up" en la acción integral y diversas estrategias "anti-wind-up" para mitigar sus efectos negativos, asegurando un control óptimo y estable en aplicaciones industriales.
 

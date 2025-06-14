@@ -159,7 +159,7 @@ Para este metodo la metodologia se basa en:
 3. Se calculan los parametros K t $T_{o}$
 
 # Ejercicios
-1. Se tiene la siguiente señal
+📚 1. Se tiene la siguiente señal
 
 ![](10.png)
 
@@ -178,7 +178,7 @@ $$ T_{i}=2L=2(5)=10 seg$$
 
 $$T_{d}=0.5L=0.5(5)=2.5 seg$$
 
-2. Tenemos la siguiente señal. Tenga en cuenta que el sistema tiene una ganancia de oscilacion sostenida de $k_{u}=4.5$ y una oscilacion sostenida de $T_{u}=2 seg$ 
+📚 2. Tenemos la siguiente señal. Tenga en cuenta que el sistema tiene una ganancia de oscilacion sostenida de $k_{u}=4.5$ y una oscilacion sostenida de $T_{u}=2 seg$ 
 
 ![](11.png)
 
